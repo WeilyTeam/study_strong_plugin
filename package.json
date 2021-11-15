@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "webpack --config ./bin/webpack.config.js --mode development",
     "build": "webpack --config ./bin/webpack.config.js --mode production",
+    "build:tampermonkey":"webpack --env BUILD_TYPE=tampermonkey --config ./bin/webpack.config.js --mode production ",
     "test": "jest"
   },
   "devDependencies": {

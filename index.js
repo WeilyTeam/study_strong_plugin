@@ -16,14 +16,15 @@ import { infoAutoGet } from "./lib/info";
   // TODO: BUG :第一次进来无法使用 原因 document 还未加载完成
   {
     try {
-      examAutoAnswer();
+      examAutoAnswer(window);
     } catch (ignore) {
-      console.log(`🚀 ~ file: index.js ~ line 22 ~ ignore`, ignore);
+      // console.log(`🚀 ~ file: index.js ~ line 22 ~ ignore`, ignore);
       setTimeout(examAutoAnswer, 1000);
     }
   }
-  {
-    console.table(infoAutoGet());
+  
+  // {
+  //   console.table(infoAutoGet());
 
-  }
+  // }
 })();
